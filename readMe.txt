@@ -21,5 +21,5 @@ This program runs through every paragraph, and then returns to the home page
 upon finishing.
 
 How to run:
-  python front.py
+  python3 front.py (does not run in python2)
   go to browser --> 127.0.0.1:5000

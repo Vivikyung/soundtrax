@@ -33,7 +33,7 @@ def story():
     last = len(s) - 1
     other = other + s[last]
     i += 1
-    if songs == [] or text = [] or samples == []:
+    if songs == [] or text == [] or samples == []:
         return redirect('/')
     return render_template('songs.html', text=t, song=s0, other=other, mood=m, sample=samp)
 
@@ -54,7 +54,7 @@ def songlists():
     last = len(s) - 1
     other = other + s[last]
     i += 1
-    if samples == []:
+    if songs == [] or text == [] or samples == []:
         return redirect('/')
     return render_template('songs.html', text=t, song=s0, other=other, mood=m, sample=samp)
 
