@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <style type="text/css">    
+      body
+      {
+        margin-top:50px;
+      }
+
+      h1
+      {
+        text-align:center;
+        font-size:48px;
+        margin-top:30px;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#DDD;
+      }
+
+      h2
+      {
+        text-align:center;
+        font-size:24px;
+        margin-top:20px;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#ffdbdb;
+      }
+
+      h3
+      {
+        text-align:center;
+        font-size:24px;
+        margin-top:20px;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#ffdbdb;
+      }
+
+      h5 {
+        text-align:center;
+        font-size:18px;
+        margin-top:20px;
+        display:block;
+        width:70%;
+        height:auto;
+        margin: 0 auto;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:2px;
+        text-decoration:none;
+        color:#DDD;
+      }
+
+      .bigger_font {
+          font-size: 36px;
+      }
+
+      h7 {
+        text-align:center;
+        font-size:18px;
+        margin-top:20px;
+        display:block;
+        width:60%;
+        height:auto;
+        margin: 0 auto;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:2px;
+        text-decoration:none;
+        color:#f4f4f4;
+      }
+
+      .big_font{
+          font-size: 26px;
+          margin-bottom: 15px;
+      }
+
+      form
+      {
+        text-align:center;
+      }
+
+      .center
+      {
+        display:block;
+        text-align:center;
+        margin: 0 auto;
+        margin-bottom:30px;
+      }
+
+      html { 
+        background: url("static/music3.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .lead
+      {
+        border-radius:3px;
+        box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+        font-family:Sintony, sans-serif;
+      }
+      
+      .pad {
+        margin-top:40px;
+      }
+
+      .s {
+        padding: 16px 32px;
+        border-radius: 4px;
+        text-decoration: none;
+        display:block;
+        text-align:center;
+        margin: 0 auto;
+        font-size: 14px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 2px solid #e7e7e7;
+      }
+
+      .s:hover {background-color: #e7e7e7;}
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Suggested Music</h1>
+    <h5>{{ text }}</h5>
+    <h3>Mood: {{ mood }}</h3>
+    <h2>Top Recommeded Song</h2>
+    <h2 class="bigger_font">{{ song }}</h2>
+    <audio controls class="center"><source src={{ sample }} type="audio/mpeg"></audio>
+    <h7 class="big_font">Other Recommendations</h7>
+    <h7>{{ other }}</h7>
+    <div class="pad">
+        <button type="button" class="s" onclick="window.location.href='/songlists'">Next Paragraph</button>
+    </div>
+  </body>
+</html>

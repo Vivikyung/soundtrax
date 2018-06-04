@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>Soundtrax</title>
+    <link href='http://fonts.googleapis.com/css?family=Sintony:400,700'     rel='stylesheet' type='text/css'>
+
+    <style type="text/css">    
+      body
+      {
+        margin-top:50px;
+      }
+
+      h1
+      {
+        text-align:center;
+        font-size:48px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#DDD;
+      }
+
+      h2
+      {
+        text-align:center;
+        font-size:24px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#DDD;
+      }
+
+      form
+      {
+        text-align:center;
+      }
+
+
+      html { 
+        background: url("static/music3.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .lead
+      {
+        border-radius:3px;
+        box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+        font-family:Sintony, sans-serif;
+      }
+      
+      .pad {
+        margin-top:30px;
+      }
+
+      .s {
+        padding: 16px 32px;
+        border-radius: 4px;
+        text-decoration: none;
+        display:block;
+        text-align:center;
+        margin: 0 auto;
+        font-size: 16px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 2px solid #e7e7e7;
+      }
+
+      .s:hover {background-color: #e7e7e7;}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Soundtrax!</h1>
+    <h2>Paste your story below.</h2>
+    <form action="/story" method="post">
+        <textarea name="story" cols="100" rows="30"></textarea>
+        <div class="pad">
+            <input class="s" type="submit" value="Submit"></input>
+        </div>
+    </form>
+</body>
+</html>
